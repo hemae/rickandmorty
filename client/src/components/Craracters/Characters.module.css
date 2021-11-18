@@ -32,8 +32,8 @@
 
 .goUp {
   position: fixed;
-  top: 100px;
-  right: 50px;
+  bottom: 100px;
+  right: 3%;
   opacity: 0;
   font-size: 30px;
   transition: all 300ms;

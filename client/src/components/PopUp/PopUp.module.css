@@ -67,7 +67,7 @@
 .episodes {
   display: flex;
   flex-direction: column;
-  overflow: scroll;
+  overflow: auto;
   max-height: 100px;
   padding-bottom: 30px;
 }

@@ -106,7 +106,7 @@ const Characters: FC = () => {
                     </div>
                 )
             })}
-            <div style={{height: '150px'}}>{isCharactersLoading && <Loader size={120}/>}</div>
+            <div style={{height: `${pageCount && page !== pageCount ? 150 : 0}px`}}>{isCharactersLoading && <Loader size={120}/>}</div>
             {charactersLoadingError && <div className={styles.error}>
                 <img src={loadingError} alt=''/>
                 <span>{charactersLoadingError}</span>

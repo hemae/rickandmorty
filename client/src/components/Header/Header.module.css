@@ -10,7 +10,6 @@
   justify-content: space-between;
   align-items: flex-start;
   transition: all 800ms;
-  background-repeat: no-repeat;
   background-position-y: 40px;
   opacity: 0.85;
 }

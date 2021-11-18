@@ -20,9 +20,18 @@ const PopUp: FC = () => {
     const colorStyles = require(`./PopUp${theme}.module.css`)
 
     const [localIsShown, setLocalIsShown] = useState<boolean>(false)
+    const [isonPopUp, setIsonPopUp] = useState<boolean>(false)
 
     const onCloseClick = (): void => {
         dispatch(charactersSlice.actions.setCharacter(null))
+    }
+
+    const onPopUpOver = (): void => {
+        setIsonPopUp(true)
+    }
+
+    const onPopUpLeave = (): void => {
+        setIsonPopUp(false)
     }
 
     useEffect(() => {
@@ -47,11 +56,14 @@ const PopUp: FC = () => {
             >
             </div>
 
-            <div className={`${styles.popUpContainer} + ${localIsShown ? styles.active : ''}`}>
+            <div className={`${styles.popUpContainer} + ${localIsShown ? styles.active : ''}`}
+                 onClick={!isonPopUp ? onCloseClick : undefined}
+            >
                 <div className={`${styles.popUp} + ${colorStyles.popUp}`}
                      style={{transform: `rotate(${Math.random() * 3 - 1.5}deg)`}}
+                     onMouseOver={onPopUpOver}
+                     onMouseLeave={onPopUpLeave}
                 >
-
 
                     <div className={`${styles.name} + ${colorStyles.name}`}>{currentCharacter.name}</div>
 
