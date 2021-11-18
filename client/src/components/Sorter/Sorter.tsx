@@ -4,6 +4,7 @@ import {useAppDispatch, useAppSelector} from '../../redux/hooks/redux'
 import {CommonSortType, PropertySortType, sorterSlice} from '../../redux/store/reducers/sorter/sorterSlice'
 import createGrid from '../../helpers/createGrid'
 import useWindowDimensions from '../../hooks/useWindowDimensions'
+import selector from '../../helpers/selector'
 
 
 const sortData: Array<{ values: Array<CommonSortType>, property: PropertySortType }> = [
@@ -17,6 +18,7 @@ const sortData: Array<{ values: Array<CommonSortType>, property: PropertySortTyp
 const Sorter: FC = () => {
 
     const {theme} = useAppSelector(state => state.settingsReducer)
+    const {name, species, status, type, gender} = useAppSelector(state => state.sorterReducer)
     const dispatch = useAppDispatch()
     const {width} = useWindowDimensions()
 
@@ -58,6 +60,7 @@ const Sorter: FC = () => {
                                                 }))
                                             }
                                         }
+                                        value={selector({sortProperties: {name, species, status, type, gender}, property: propertyData.property}) || ''}
                                     >
                                         {propertyData.values.map((value, index) => {
                                             return (
