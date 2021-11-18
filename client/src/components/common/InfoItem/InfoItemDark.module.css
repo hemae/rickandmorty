@@ -1,0 +1,25 @@
+.info {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.property {
+  color: #8d9b66;
+}
+
+.value {
+  color: #7ec43b;
+}
+
+.value.name {
+  color: #0088bb;
+}
+
+.star {
+  color: gold;
+}
+
+.star:hover {
+  color: #d0b001;
+}

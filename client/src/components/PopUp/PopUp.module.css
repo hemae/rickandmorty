@@ -1,0 +1,102 @@
+.background {
+  position: fixed;
+  width: 100vw;
+  min-height: 100vh;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  opacity: 0;
+  transition: all 500ms;
+}
+
+.background.active {
+  opacity: 0.7;
+}
+
+.popUpContainer {
+  position: fixed;
+  width: 100vw;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 250ms;
+  opacity: 0;
+  transform: scale(3);
+}
+
+.popUpContainer.active {
+  opacity: 1;
+  transform: scale(1);
+}
+
+.popUp {
+  padding: 20px;
+  border-radius: 20px;
+  transition: all 250ms;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+
+.header {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.characterInfo {
+  display: flex;
+}
+
+.image {
+  margin: 8px 20px 8px 8px;
+  width: 200px;
+  height: 200px;
+  border-radius: 100px;
+}
+
+.info {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.episodes {
+  display: flex;
+  flex-direction: column;
+  overflow: scroll;
+  max-height: 100px;
+  padding-bottom: 30px;
+}
+
+.episodesRow {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+
+.close {
+  font-size: 30px;
+  cursor: pointer;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  transition: color 150ms;
+}
+
+.name {
+  font-size: 26px;
+  font-weight: bold;
+}
+
+.opacityBlock {
+  position: absolute;
+  bottom: 10px;
+  width: 90%;
+  height: 20px;
+}
+

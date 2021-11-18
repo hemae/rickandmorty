@@ -1,0 +1,8 @@
+.subHeader {
+  width: 100%;
+  transition: background 1200ms;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position-y: -100px;
+}
+

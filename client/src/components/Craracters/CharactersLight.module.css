@@ -1,0 +1,13 @@
+.characters {
+
+}
+
+.goUp {
+    background-color: #f8f096;
+    color: #0088bb;
+    box-shadow: 0 0 15px #4b4f31;
+}
+
+.goUp:hover {
+    box-shadow: 0 0 15px 5px #769334;
+}

@@ -1,0 +1,29 @@
+.popUp {
+  background-color: #1c1c12;
+}
+
+.popUp {
+  background-color: #1c1c12;
+  box-shadow: 0 0 20px 10px black;
+}
+
+.image {
+  box-shadow: 0 0 10px 10px #0088bb;
+}
+
+.close {
+  color: #0088bb;
+}
+
+.close:hover {
+  color: #af0000;
+}
+
+.name {
+  color: #0088bb;
+}
+
+.opacityBlock {
+  background-color: #1c1c12;
+  box-shadow: 0 -10px 10px 10px #1c1c12;
+}

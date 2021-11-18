@@ -1,0 +1,15 @@
+.episode {
+  height: 22px;
+  width: 22px;
+  font-size: 18px;
+  margin: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+  text-decoration: none;
+  border-radius: 5px;
+  cursor: default;
+  transition: all 200ms;
+}
+

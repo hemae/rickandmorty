@@ -1,0 +1,58 @@
+.characters {
+  width: 100vw;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  margin-bottom: 40px;
+}
+
+.charactersRow {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.error {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.error img {
+  width: 500px;
+}
+
+.error span {
+  font-size: 36px;
+  color: #af0000;
+}
+
+.goUp {
+  position: fixed;
+  top: 100px;
+  right: 50px;
+  opacity: 0;
+  font-size: 30px;
+  transition: all 300ms;
+  transform: rotate(-44deg);
+  width: 60px;
+  height: 60px;
+  border-radius: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.goUp.shown {
+  cursor: pointer;
+  opacity: 0.6;
+}
+
+.goUp.shown:hover {
+  transform: rotate(-44deg) scale(1.1);
+  opacity: 0.9;
+}
+

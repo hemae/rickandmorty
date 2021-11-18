@@ -1,0 +1,40 @@
+.sorter {
+  width: 70%;
+  min-width: 500px;
+  margin: 20px;
+  transition: all 200ms;
+  border-radius: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.sortDataRow {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: 10px;
+}
+
+.sorterProperty {
+  width: max-content;
+  margin-right: 10px;
+}
+
+.sorterProperty span {
+  font-weight: bold;
+  font-size: 22px;
+  transition: all 300ms;
+}
+
+.sorterProperty select {
+  margin-left: 10px;
+  padding: 5px;
+  border: none;
+  border-radius: 15px;
+  font-size: 18px;
+  outline: none;
+  transition: all 250ms;
+}
+

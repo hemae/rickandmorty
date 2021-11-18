@@ -1,0 +1,16 @@
+.sorter {
+  background-color: #0088bb;
+  box-shadow: 0 0 10px black;
+}
+
+.sorterProperty {
+
+}
+
+.sorterProperty span {
+  color: #000000;
+}
+
+.sorterProperty select {
+  background-color: #f8f096;
+}

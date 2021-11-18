@@ -1,0 +1,25 @@
+.info {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  font-size: 20px;
+}
+
+.property {
+  transition: all 250ms;
+}
+
+.value {
+  text-align: center;
+  margin-left: 10px;
+  font-weight: bold;
+  transition: all 250ms;
+  display: flex;
+  justify-content: flex-start;
+}
+
+.star {
+  margin-left: 10px;
+  font-size: 26px;
+  transition: color 300ms;
+}
