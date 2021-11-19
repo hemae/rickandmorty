@@ -1,6 +1,6 @@
 # [Rick&Morty characters browser](http://workcard.fun) <- go to the app
 
-Client of this project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app), using the [Redux](https://redux.js.org/) and [Redux Toolkit](https://redux-toolkit.js.org/) template.
+Client of this project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app), using the [Redux](https://redux.js.org/) and [Redux Toolkit](https://redux-toolkit.js.org/) [TypeScript](https://github.com/microsoft/TypeScript) template.
 
 Server is written with [Node.js](https://github.com/nodejs), using [express](https://github.com/expressjs/express) library. Simple server is needed for browsing built client.
 
