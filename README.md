@@ -6,6 +6,10 @@ Server is written with [Node.js](https://github.com/nodejs), using [express](htt
 
 ## What is it?
 
+![image][image]
+
+[image]: http://workcard.fun/static/media/subheader_3.46408fa5.jpeg "Rick and Morty"
+
 The project is a simple application for browsing characters of Rick&Morty cartoon.
 Data using in the project is provided by [Rick&Morty API](https://rickandmortyapi.com/).
 
