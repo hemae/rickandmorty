@@ -43,7 +43,7 @@ to install server dependences. In any case run:
 npm run client:install
 ```
 
-to install client dependences (create-react-app and other).
+to install client dependences (React App and other).
 
 So, after this it is already available for you to run script `npm run client` to run React Application in the development mode.
 Then you can open the development server [http://localhost:3000](http://localhost:3000)
